@@ -1,54 +1,52 @@
 import { ExternalLink } from "lucide-react";
+import WorldRecordCarousel from '../components/worldrecordcarousel';
+
 
 const certifications = [
   {
     id: 1,
-    title: "Google UX Design Certificate",
-    description: "7-course UX specialization from Google via Coursera.",
-    image: "/achievements/cert1.png",
-    link: "https://coursera.org/verify/xyz",
+    title: "AWS cloude practitioner certification",
+    description: "Fundamentals of AWS cloud services and architecture.",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/c_crop,w_1100,h_800/v1749837960/Screenshot_2025-06-13_233551_vpfadp.png",
+    link: "https://res.cloudinary.com/dbwcqwyjm/image/upload/c_crop,w_1100,h_800/v1749837960/Screenshot_2025-06-13_233551_vpfadp.png",
+  },
+  {
+    id: 2,
+    title: "Guvi /HCL webinar tools every devops engineer should know",
+    description: "Webinar on essential DevOps tools.",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749839301/Screenshot_2025-06-13_235810_i6kh6g.png",
+    link: "https://www.guvi.in/share-certificate/1430Cl144On97D53M6",
+  },
+  {
+    id: 3,
+    title: "Proffessional Certificate in Agile and Scrum",
+    description: "Comprehensive course on Agile methodologies and Scrum framework.",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749839699/Screenshot_2025-06-14_000456_mnvu32.png",
+    link: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749839699/Screenshot_2025-06-14_000456_mnvu32.png",
   },
   // Add more...
 ];
 
-const competitions = [
-  {
-    id: 1,
-    title: "Smart India Hackathon 2023",
-    description: "Finalist in national-level hackathon under software category.",
-    image: "/achievements/comp1.png",
-    link: "#",
-  },
-  // Add more...
-];
 
 const publications = [
   {
     id: 1,
-    title: "AI in Education: A Future Perspective",
-    description: "Published in International Journal of Emerging Tech (IJET).",
-    image: "/achievements/pub1.png",
-    link: "https://example.com/publication-paper",
+    title: "Peruse of Traffic in Educational Premises Using Max-Flow Min-Cut Theorem ",
+    description: "Published in Educational Administration: Theory and Practice (Scopus-indexed)",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749586522/Screenshot_2025-06-11_014448_rp9fmt.png",
+    link: "https://www.kuey.net/index.php/kuey/article/view/1663",
   },
-];
-
-const copyrights = [
   {
-    id: 1,
-    title: "CodeVerse - Interactive Coding Platform",
-    description: "Copyright registered for original source code & UI design.",
-    image: "/achievements/copyright1.png",
-    link: "#",
+    id: 2,
+    title: "Real-Time Geospatial Analysis: A Web Application for Dynamic Polygon Area Calculation",
+    description: "Published in International Journal ofCreative Research Thoughts (IJCRT)",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749586706/Screenshot_2025-06-11_014822_facaek.png",
+    link: "https://ijcrt.org/viewfulltext.php?&p_id=IJCRT2405905",
   },
 ];
 
-const worldRecord = {
-  title: "World Record - Fastest Prototype Deployment by a Student",
-  description:
-    "Awarded by XYZ Organization for deploying a complete SaaS MVP in under 12 hours.",
-  image: "/achievements/worldrecord.png",
-  link: "#",
-};
+
+
 
 const Card = ({ title, description, image, link }) => (
   <div className="group bg-card rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
@@ -90,9 +88,9 @@ export const AchievementsSection = () => {
         {/* Reusable Section Generator */}
         {[
           { title: "📜 Certifications", data: certifications },
-          { title: "🏁 Competitions", data: competitions },
+          
           { title: "🧠 Publications", data: publications },
-          { title: "©️ Copyrights", data: copyrights },
+          
         ].map((section) =>
           section.data.length > 0 ? (
             <div className="mb-16" key={section.title}>
@@ -108,9 +106,9 @@ export const AchievementsSection = () => {
 
         {/* World Record Certificate */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-6">🌍 World Record</h3>
-          <Card {...worldRecord} />
-        </div>
+        <h3 className="text-2xl font-semibold mb-6">🌍 World Record</h3>
+        <WorldRecordCarousel />
+      </div>
       </div>
     </section>
   );

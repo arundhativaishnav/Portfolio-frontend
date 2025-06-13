@@ -5,17 +5,17 @@ const projects = [
     id: 1,
     title: "CodeSage",
     description: "AI-driven code review tool that analyzes code quality and provides suggestions for improvement.",
-    image: "/projects/project1.png",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749585674/Screenshot_2025-06-11_013106_iietxk.png",
     tags: ["React", "TailwindCSS", "Node.js", "OpenAI"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://code-sage-six.vercel.app/",
+    githubUrl: "https://github.com/arundhativaishnav/code-sage",
   },
   {
     id: 2,
     title: "NewsNova",
     description:
       "AI-driven news reporting platform that generates articles based on trending topics and user interests.",
-    image: "/assets/project2.png",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749564100/Screenshot_2025-06-09_005430_ekql3w.png",
     tags: ["React.js", "Node.js", "Express.js", "Grok API"],
     demoUrl: "https://arundhativaishnav.github.io/news-ai/",
     githubUrl: "https://github.com/arundhativaishnav/code-reviewer",
@@ -25,27 +25,18 @@ const projects = [
     title: "GeoCalc – Area Calculation Web App",
     description:
       "Developed a web application to calculate the area of user-defined polygons on an interactive real-time map.",
-    image: "/projects/project3.png",
+    image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749727897/Screenshot_2025-06-12_170115_m5agnb.png",
     tags: ["Leaflet.js"," HTML", "CSS", "JavaScript"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://arundhativaishnav.github.io/AreaCalculationWeb/",
+    githubUrl: "https://github.com/arundhativaishnav/AreaCalculationWeb",
   },
-  {
-    id: 4,
-    title: "FinTrack – Desktop Expense Tracker",
-    description:
-      "A desktop application for tracking expenses, built with Java Swing and MySQL for data management.",
-    image: "/projects/project3.png",
-    tags: ["Java"," Swing", "MySQL", "JDBC"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+  
     {
-        id: 5,
+        id: 4,
         title: "Workforce360",
         description:
         "A comprehensive HR management system for managing employee records, attendance, and payroll.",
-        image: "/projects/project4.png",
+        image: "https://res.cloudinary.com/dbwcqwyjm/image/upload/v1749636217/Screenshot_2025-06-11_153254_v1lwsv.png",
         tags: ["MongoDB", "Express.js", "React.js", "Node.js","cloudinary","nodemailer"],
         demoUrl: "https://workforce360-frontend.vercel.app/",
         githubUrl: "https://github.com/arundhativaishnav/workforce360-frontend"
