@@ -53,7 +53,7 @@ export const Footer = () => {
           </a>
           
           <a
-            href="mailto:arundhatianil17@email.com"
+            href="arundhatianil17@email.com"
             className="hover:text-primary transition"
           >
             <Mail />
