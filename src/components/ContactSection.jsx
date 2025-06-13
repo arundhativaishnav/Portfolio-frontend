@@ -26,7 +26,7 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/contact", formData);
+      const response = await axios.post("https://portfolio-backend-ci2a.onrender.com/api/contact", formData);
 
       if (response.data.success) {
         toast.success("Message sent! Thank you for your message.");
